@@ -456,7 +456,7 @@
           <a href="#" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50" data-tab="projet">
             <i data-lucide="folder-open" class="w-4 h-4"></i><span>Mon projet</span>
           </a>
-          <a href="#" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50" data-tab="fichiers">
+          <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50" data-tab="fichiers">
             <i data-lucide="upload" class="w-4 h-4"></i><span>Fichiers</span>
           </a>
           <a href="#" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50" data-tab="chat">
@@ -538,7 +538,7 @@
           <div class="flex items-center justify-between">
             <div>
               <h1 class="text-3xl font-bold text-gray-800 mb-2">
-                Bonjour !
+                Bonjour Hugo !
               </h1>
               <p class="text-lg text-gray-500 max-w-2xl">
                 Bienvenue dans votre espace client, tout est centralisé ici pour suivre 
@@ -709,7 +709,7 @@
               <div class="text-2xl font-bold text-green-600">3</div>
               <div class="text-sm text-green-600">Étapes terminées</div>
             </div>
-            <div class="p-4 bg-yellow-50 rounded-lg" style="background-color:#fe5c045b;">
+            <div class="p-4 bg-yellow-50 rounded-lg" style="background-color:#fe5c042d;">
               <div class="text-2xl font-bold" style="color: #FE5B04;">1</div>
               <div class="text-sm" style="color: #FE5B04;">Étape en cours</div>
             </div>
@@ -848,7 +848,7 @@
 
 
     <!-- Bouton ajouter -->
-    <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center">
+    <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center" style="background-color: #FE5B04;">
       <i data-lucide="upload" class="w-4 h-4 mr-2"></i> Ajouter un fichier
     </button>
   </div>
@@ -996,231 +996,7 @@
       </div>
     </div>
     
-    <!-- FICHIERS -->
-    <div id="fichiers" class="tabs">
-      <!-- Header -->
-      <div class="nova-card p-8 bg-white rounded-2xl shadow">
-        <h1 class="text-3xl font-bold text-gray-800 mb-2">
-          Espace de dépôt & livraison
-        </h1>
-        <p class="text-lg text-gray-500">
-          Centralisez tous vos fichiers projet en un seul endroit
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-        <!-- Client Files -->
-        <div class="nova-card bg-white rounded-2xl shadow">
-          <div class="p-6 border-b border-gray-100">
-            <div class="flex items-center space-x-2">
-              <i data-lucide="upload" class="w-5 h-5 text-blue-500"></i>
-              <h3 class="font-semibold">Vos fichiers envoyés</h3>
-            </div>
-            <p class="text-sm text-gray-500 mt-1">Documents et assets que vous avez partagés avec l'équipe</p>
-          </div>
-          <div class="p-6 space-y-4">
-            <!-- Exemple fichier -->
-            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
-              <div class="flex items-start justify-between">
-                <div class="flex items-start space-x-3">
-                  <i data-lucide="image" class="w-5 h-5 text-blue-500"></i>
-                  <div>
-                    <h4 class="font-medium text-sm">Logo-AIBoost.png</h4>
-                    <p class="text-xs text-gray-500 mt-1">Logo principal de la marque</p>
-                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
-                      <span>2.5 MB</span> • <span>15 juillet 2025</span>
-                    </div>
-                  </div>
-                </div>
-                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Brief-Webinaire.docx -->
-            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
-              <div class="flex items-start justify-between">
-                <div class="flex items-start space-x-3">
-                  <i data-lucide="file-text" class="w-5 h-5 text-red-500"></i>
-                  <div>
-                    <h4 class="font-medium text-sm">Brief-Webinaire.docx</h4>
-                    <p class="text-xs text-gray-500 mt-1">Document avec les objectifs et le public cible</p>
-                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
-                      <span>1.2 MB</span> • <span>15 juillet 2025</span>
-                    </div>
-                  </div>
-                </div>
-                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Copywriting-Elements.txt -->
-            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
-              <div class="flex items-start justify-between">
-                <div class="flex items-start space-x-3">
-                  <i data-lucide="file-text" class="w-5 h-5 text-gray-500"></i>
-                  <div>
-                    <h4 class="font-medium text-sm">Copywriting-Elements.txt</h4>
-                    <p class="text-xs text-gray-500 mt-1">Textes et accroches pour la landing page</p>
-                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
-                      <span>45 KB</span> • <span>16 juillet 2025</span>
-                    </div>
-                  </div>
-                </div>
-                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-
-
-            <!-- Bouton ajouter -->
-            <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center">
-              <i data-lucide="upload" class="w-4 h-4 mr-2"></i> Ajouter un fichier
-            </button>
-          </div>
-        </div>
-
-        <!-- Delivered Files -->
-        <div class="nova-card bg-white rounded-2xl shadow">
-          <div class="p-6 border-b border-gray-100">
-            <div class="flex items-center space-x-2">
-              <i data-lucide="download" class="w-5 h-5 text-blue-500"></i>
-              <h3 class="font-semibold">Fichiers livrés par l'agence</h3>
-            </div>
-            <p class="text-sm text-gray-500 mt-1">Livrables créés par l'équipe NovaSpace</p>
-          </div>
-          <div class="p-6 space-y-4">
-            <!-- Exemple livrable -->
-            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
-              <div class="flex items-start justify-between">
-                <div class="flex items-start space-x-3">
-                  <i data-lucide="file-text" class="w-5 h-5 text-red-500"></i>
-                  <div>
-                    <div class="flex items-center space-x-2">
-                      <h4 class="font-medium text-sm">Wireframe-Landing-V1.pdf</h4>
-                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">V1</span>
-                      <span class="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">✓ Validé</span>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1">Structure et organisation des contenus</p>
-                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
-                      <span>3.8 MB</span> • <span>18 juillet 2025</span> • <span>Sacha - NovaSpace</span>
-                    </div>
-                  </div>
-                </div>
-                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Maquette-Figma-V2.fig -->
-            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
-              <div class="flex items-start justify-between">
-                <div class="flex items-start space-x-3">
-                  <i data-lucide="image" class="w-5 h-5 text-purple-500"></i>
-                  <div>
-                    <div class="flex items-center space-x-2">
-                      <h4 class="font-medium text-sm">Maquette-Figma-V2.fig</h4>
-                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">V2</span>
-                      <span class="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">✓ Validé</span>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1">Design complet validé par le client</p>
-                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
-                      <span>12.5 MB</span> • <span>22 juillet 2025</span> • <span>Sacha - NovaSpace</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex space-x-2">
-                  <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                  </button>
-                  <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                    <i data-lucide="download" class="w-4 h-4"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Landing-Page-Webflow.zip -->
-            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
-              <div class="flex items-start justify-between">
-                <div class="flex items-start space-x-3">
-                  <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
-                  <div>
-                    <div class="flex items-center space-x-2">
-                      <h4 class="font-medium text-sm">Landing-Page-Webflow.zip</h4>
-                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">V1</span>
-                      <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-0.5 rounded">🔄 En cours</span>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1">Code et assets pour intégration</p>
-                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
-                      <span>8.2 MB</span> • <span>25 juillet 2025</span> • <span>Sacha - NovaSpace</span>
-                    </div>
-                  </div>
-                </div>
-                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Checklist -->
-      <div class="nova-card bg-white rounded-2xl shadow p-6 mt-8">
-        <div class="flex items-center space-x-2 mb-2">
-          <span>✅</span>
-          <h3 class="font-semibold">Checklist du client</h3>
-        </div>
-        <p class="text-sm text-gray-500 mb-4">Assurez-vous d'avoir fourni tous les éléments nécessaires</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="space-y-2">
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" checked class="rounded border-gray-300" />
-              <span class="text-sm">Logo envoyé</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" checked class="rounded border-gray-300" />
-              <span class="text-sm">Objectifs clarifiés</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" class="rounded border-gray-300" />
-              <span class="text-sm">Inspirations visuelles partagées</span>
-            </label>
-          </div>
-          <div class="space-y-2">
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" class="rounded border-gray-300" />
-              <span class="text-sm">Accès domaine/hébergement partagé</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" checked class="rounded border-gray-300" />
-              <span class="text-sm">Textes et copywriting fournis</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" class="rounded border-gray-300" />
-              <span class="text-sm">Données Google Analytics fournies</span>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tips -->
-      <div class="nova-card p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl shadow mt-8">
-        <h3 class="text-lg font-semibold mb-2">💡 Organisation optimale</h3>
-        <p class="text-sm text-gray-500">
-          Tous vos fichiers sont organisés automatiquement par version et étape de projet. 
-          Vous retrouvez facilement l'historique complet de votre collaboration.
-        </p>
-      </div>
-    </div>
-
+    
     <!-- COMMENTAIRES -->
     <div id="commentaires" class="tabs">
       <div class="card">
@@ -1252,7 +1028,7 @@
         <!-- Header -->
         <div class="nova-card p-8 bg-white rounded-2xl shadow">
           <div>
-            <h1 class="text-3xl font-bold">Factures & Paiements</h1>
+            <h1 class="text-3xl font-bold" style="color: #FE5B04;">Factures & Paiements</h1>
             <p class="text-gray-500 text-lg">Suivez vos factures et l'état des paiements</p>
           </div>
         </div>
@@ -1274,7 +1050,7 @@
               <span class="text-sm font-medium">Montant Payé</span>
               <span class="text-green-500">✔</span>
             </div>
-            <div class="text-2xl font-bold text-green-500">1,750 €</div>
+            <div class="text-2xl font-bold text-green-500"  style="color: #FE5B04;">1,750 €</div>
             <p class="text-xs text-gray-500">50% du projet</p>
           </div>
       
@@ -1298,10 +1074,10 @@
               <span class="font-medium">50%</span>
             </div>
             <div class="bg-gray-200 h-3 rounded">
-              <div class="bg-green-500 h-3 rounded" style="width:50%"></div>
+              <div class="bg-green-500 h-3 rounded" style="width:50%; background-color: #FE5B04;"></div>
             </div>
             <div class="flex justify-between text-sm text-gray-500">
-              <span>1,750 € payés</span>
+              <span style="color: #FE5B04;">1,750 € payés</span>
               <span>1,750 € restants</span>
             </div>
           </div>
@@ -1402,7 +1178,7 @@
 
         <!-- Header -->
         <div class="nova-card p-8 bg-white rounded-2xl shadow">
-          <h1 class="text-3xl font-bold text-gray-800 mb-2">
+          <h1 class="text-3xl font-bold text-gray-800 mb-2" style="color: #FE5B04;">
             Section Feedback & Validation
           </h1>
           <p class="text-lg text-gray-500">
@@ -1582,8 +1358,8 @@
 
     <!-- Header -->
     <div class="nova-card p-8 bg-white rounded-2xl shadow">
-      <h1 class="text-3xl font-bold text-gray-800 mb-2">Contact Agence</h1>
-      <p class="text-lg text-gray-500">L'équipe Agency est là pour vous accompagner</p>
+      <h1 class="text-3xl font-bold text-gray-800 mb-2" style="color: #FE5B04;">Contact Agence</h1>
+      <p class="text-lg text-gray-500">Notre équipe est là pour vous accompagner</p>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -1619,7 +1395,7 @@
             <textarea placeholder="Décrivez votre demande en détail..." class="w-full p-2 border rounded-md text-sm min-h-[120px]"></textarea>
           </div>
 
-          <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center">
+          <button type="submit" class="w-full bg-gradient-to-r to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center" style="background-color: #FE5B04;">
             <i data-feather="arrow-right" class="inline"></i>
             <span class="ml-2">Envoyer le message</span>
           </button>
@@ -1641,7 +1417,7 @@
             <!-- Member 1 -->
             <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
               <div class="flex items-start space-x-3">
-                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-medium">S</div>
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-medium" style="background-color: #FE5B04;">S</div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center justify-between">
                     <h4 class="font-medium text-sm">Sacha</h4>
@@ -1658,11 +1434,11 @@
             <!-- Member 2 -->
             <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
               <div class="flex items-start space-x-3">
-                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-medium">T</div>
+                <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-medium" style="background-color: #FE5B04;">T</div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center justify-between">
                     <h4 class="font-medium text-sm">Thomas Durand</h4>
-                    <span class="text-xs px-2 py-1 rounded-full bg-yellow-100 text-yellow-600" style="background-color: #8b52fe3f; color: #FE5B04;">Occupé jusqu'à 16h</span>
+                    <span class="text-xs px-2 py-1 rounded-full bg-yellow-100 text-yellow-600" style="background-color: #fe5c042f;; color: #FE5B04;">Occupé jusqu'à 16h</span>
                   </div>
                   <p class="text-xs text-gray-500">Graphiste senior</p>
                   <div class="flex flex-wrap gap-1 mt-2">
