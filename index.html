@@ -443,7 +443,7 @@
             <span class="text-white font-bold text-sm">S</span>
           </div>
           <div>
-            <h1 class="text-lg sm:text-xl font-bold text-gray-900">Sacha</h1>
+            <h1 class="text-lg sm:text-xl font-bold text-gray-900" style="color: #FE5B04;">Sacha</h1>
             <p class="hidden sm:block text-xs text-gray-500">Votre espace client</p>
           </div>
         </div>
@@ -515,7 +515,7 @@
 
            <!-- Mobile user info -->
         <div class="flex items-center space-x-3 px-3 py-2 mt-4 pt-4 border-t border-gray-100">
-          <div class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center text-white">
+          <div class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center text-white" style="background-color: #FE5B04;">
             <i data-lucide="user" class="w-4 h-4"></i>
           </div>
           <div>
@@ -537,7 +537,7 @@
         <div class="nova-card p-8 bg-white rounded-2xl shadow">
           <div class="flex items-center justify-between">
             <div>
-              <h1 class="text-3xl font-bold text-gray-800 mb-2">
+              <h1 class="text-3xl font-bold text-gray-800 mb-2" style="color: #FE5B04;">
                 Bonjour Hugo !
               </h1>
               <p class="text-lg text-gray-500 max-w-2xl">
@@ -848,7 +848,7 @@
 
 
     <!-- Bouton ajouter -->
-    <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center" style="background-color: #FE5B04;">
+    <button class="w-full bg-gradient-to-r to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center" style="background-color: #FE5B04;">
       <i data-lucide="upload" class="w-4 h-4 mr-2"></i> Ajouter un fichier
     </button>
   </div>
@@ -996,7 +996,236 @@
       </div>
     </div>
     
-    
+    <!-- FICHIERS -->
+    <div id="fichiers" class="tabs">
+      <!-- Header -->
+      <div class="nova-card p-8 bg-white rounded-2xl shadow">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2" style="color: #FE5B04;">
+          Espace de dépôt & livraison
+        </h1>
+        <p class="text-lg text-gray-500">
+          Centralisez tous vos fichiers projet en un seul endroit
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+        <!-- Client Files -->
+        <div class="nova-card bg-white rounded-2xl shadow">
+          <div class="p-6 border-b border-gray-100">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="upload" class="w-5 h-5 text-blue-500"></i>
+              <h3 class="font-semibold">Vos fichiers envoyés</h3>
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Documents et assets que vous avez partagés avec l'équipe</p>
+          </div>
+          <div class="p-6 space-y-4">
+            <!-- Exemple fichier -->
+            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-start justify-between">
+                <div class="flex items-start space-x-3">
+                  <i data-lucide="image" class="w-5 h-5 text-blue-500"></i>
+                  <div>
+                    <h4 class="font-medium text-sm">Logo-AIBoost.png</h4>
+                    <p class="text-xs text-gray-500 mt-1">Logo principal de la marque</p>
+                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
+                      <span>2.5 MB</span> • <span>15 juillet 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                  <i data-lucide="download" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Brief-Webinaire.docx -->
+            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-start justify-between">
+                <div class="flex items-start space-x-3">
+                  <i data-lucide="file-text" class="w-5 h-5 text-red-500"></i>
+                  <div>
+                    <h4 class="font-medium text-sm">Brief-Webinaire.docx</h4>
+                    <p class="text-xs text-gray-500 mt-1">Document avec les objectifs et le public cible</p>
+                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
+                      <span>1.2 MB</span> • <span>15 juillet 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                  <i data-lucide="download" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Copywriting-Elements.txt -->
+            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-start justify-between">
+                <div class="flex items-start space-x-3">
+                  <i data-lucide="file-text" class="w-5 h-5 text-gray-500"></i>
+                  <div>
+                    <h4 class="font-medium text-sm">Copywriting-Elements.txt</h4>
+                    <p class="text-xs text-gray-500 mt-1">Textes et accroches pour la landing page</p>
+                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
+                      <span>45 KB</span> • <span>16 juillet 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                  <i data-lucide="download" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <!-- Bouton ajouter -->
+            <button class="w-full bg-gradient-to-r to-indigo-500 text-white rounded-lg px-4 py-2 flex items-center justify-center" style="background-color: #FE5B04;">
+              <i data-lucide="upload" class="w-4 h-4 mr-2"></i> Ajouter un fichier
+            </button>
+          </div>
+        </div>
+
+        <!-- Delivered Files -->
+        <div class="nova-card bg-white rounded-2xl shadow">
+          <div class="p-6 border-b border-gray-100">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="download" class="w-5 h-5 text-blue-500"></i>
+              <h3 class="font-semibold">Fichiers livrés par l'agence</h3>
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Livrables créés par l'équipe NovaSpace</p>
+          </div>
+          <div class="p-6 space-y-4">
+            <!-- Exemple livrable -->
+            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-start justify-between">
+                <div class="flex items-start space-x-3">
+                  <i data-lucide="file-text" class="w-5 h-5 text-red-500"></i>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <h4 class="font-medium text-sm">Wireframe-Landing-V1.pdf</h4>
+                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">V1</span>
+                      <span class="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">✓ Validé</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Structure et organisation des contenus</p>
+                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
+                      <span>3.8 MB</span> • <span>18 juillet 2025</span> • <span>Sophie - NovaSpace</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                  <i data-lucide="download" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Maquette-Figma-V2.fig -->
+            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-start justify-between">
+                <div class="flex items-start space-x-3">
+                  <i data-lucide="image" class="w-5 h-5 text-purple-500"></i>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <h4 class="font-medium text-sm">Maquette-Figma-V2.fig</h4>
+                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">V2</span>
+                      <span class="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">✓ Validé</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Design complet validé par le client</p>
+                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
+                      <span>12.5 MB</span> • <span>22 juillet 2025</span> • <span>Sophie - NovaSpace</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex space-x-2">
+                  <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </button>
+                  <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Landing-Page-Webflow.zip -->
+            <div class="p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-start justify-between">
+                <div class="flex items-start space-x-3">
+                  <i data-lucide="archive" class="w-5 h-5 text-orange-500"></i>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <h4 class="font-medium text-sm">Landing-Page-Webflow.zip</h4>
+                      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">V1</span>
+                      <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-0.5 rounded">🔄 En cours</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Code et assets pour intégration</p>
+                    <div class="flex items-center space-x-2 mt-2 text-xs text-gray-500">
+                      <span>8.2 MB</span> • <span>25 juillet 2025</span> • <span>Sophie - NovaSpace</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="px-2 py-1 border rounded text-sm hover:bg-gray-100">
+                  <i data-lucide="download" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <a href="#" data-tab="chat" class="w-full bg-gradient-to-r to-indigo-500 justify-center flex items-center px-4 py-2 rounded-lg text-white text-sm font-medium shadow" style="background-color: #FE5B04;;">
+                <i ></i> Laisser un feedback
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Checklist -->
+      <div class="nova-card bg-white rounded-2xl shadow p-6 mt-8">
+        <div class="flex items-center space-x-2 mb-2">
+          <span>✅</span>
+          <h3 class="font-semibold">Checklist du client</h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4">Assurez-vous d'avoir fourni tous les éléments nécessaires</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" checked class="rounded border-gray-300" />
+              <span class="text-sm">Logo envoyé</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" checked class="rounded border-gray-300" />
+              <span class="text-sm">Objectifs clarifiés</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="rounded border-gray-300" />
+              <span class="text-sm">Inspirations visuelles partagées</span>
+            </label>
+          </div>
+          <div class="space-y-2">
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="rounded border-gray-300" />
+              <span class="text-sm">Accès domaine/hébergement partagé</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" checked class="rounded border-gray-300" />
+              <span class="text-sm">Textes et copywriting fournis</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" class="rounded border-gray-300" />
+              <span class="text-sm">Données Google Analytics fournies</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tips -->
+      <div class="nova-card p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl shadow mt-8">
+        <h3 class="text-lg font-semibold mb-2">💡 Organisation optimale</h3>
+        <p class="text-sm text-gray-500">
+          Tous vos fichiers sont organisés automatiquement par version et étape de projet. 
+          Vous retrouvez facilement l'historique complet de votre collaboration.
+        </p>
+      </div>
+    </div>
+
+
     <!-- COMMENTAIRES -->
     <div id="commentaires" class="tabs">
       <div class="card">
